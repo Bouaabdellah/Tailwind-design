@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply text-center px-8
+}
+.card i{
+    @apply text-main-color text-[1.5rem] mb-3
+}
+.card h3{
+    @apply font-bold text-[1.3rem] mb-1 capitalize
+}
+.card p{
+    @apply text-[1.1rem] text-paragraph-color
+}
+.main-title{
+    @apply text-6xl md:text-8xl font-bold md:font-extrabold capitalize text-main-title text-center -tracking-[2px]
+}
+.main-paragraph{
+    @apply text-[1rem] md:text-xl text-main-paragraph text-center -mt-3 mb-[100px]
+}
+/* skill card */
+.skill{
+    @apply flex mb-8 flex-col text-center md:flex-row md:text-start
+}
+.skill i{
+    @apply mb-2 text-main-color mr-3 text-2xl
+}
+.skill h3{
+    @apply font-bold capitalize text-[22px] mb-2
+}
+.skill p{
+    @apply text-paragraph-color text-[18px] leading-normal
+}
+/* portfolio card */
+.portfolio-card{
+    @apply bg-white overflow-hidden rounded-md shadow-main-shaddow duration-300
+}
+.portfolio-card:hover{
+    @apply shadow-effect-shaddow -translate-y-3
+}
+.portfolio-card img{
+    @apply w-full
+}
+.portfolio-card > div{
+    @apply px-3 py-6
+}
+.portfolio-card > div h3{
+    @apply font-bold text-2xl mb-2 capitalize
+}
+.portfolio-card > div p{
+    @apply text-main-paragraph leading-normal text-[18px]
+}

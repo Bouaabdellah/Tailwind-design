@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--css file-->
+    <link rel="stylesheet" href="style.css">
+    <!--font icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Template1 Using Tailwind</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="container md:w-[750px] min-[992px]:w-[970px] min-[1200px]:w-[1170px] mx-auto px-5">
+            <div class="header flex justify-between items-center py-4">
+                <div class="text-4xl text-main-color">
+                    <i class="fa-brands fa-wordpress"></i>
+                </div>
+                <div class="links relative">
+                    <div class="text-right text-4xl text-main-color">
+                        <i class="fa-solid fa-bars-staggered cursor-pointer"></i>
+                    </div>
+                    <ul class="hidden absolute z-10 min-w-[200px] right-0 top-[calc(100%+10px)] bg-gray-400 
+            capitalize divide-y-[1px] divide-white
+            after:content-[''] after:absolute after:right-0 after:top-[-20px]
+            after:border-[10px] after:border-solid after:border-transparent after:border-b-gray-400">
+                        <li class="pl-3 py-3"><a href="#service" class="block duration-300">services</a></li>
+                        <li class="pl-3 py-3"><a href="#portfolio" class="block duration-300">portfolio</a></li>
+                        <li class="pl-3 py-3"><a href="#about" class="block duration-300">about</a></li>
+                        <li class="pl-3 py-3"><a href="#contanct" class="block duration-30">contanct</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="landing bg-landing bg-no-repeat bg-center bg-cover
+            flex justify-center items-center text-center h-[400px] opacity-80">
+                <div class="text">
+                    <h1 class="capitalize font-bold text-4xl text-main-color">beloued bouaabdellah</h1>
+                    <p class="text-white text-xl px-[20%] mt-8 font-medium">Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Repellat, quisquam?</p>
+                </div>
+            </div>
+            <div class="features grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] bg-third-color px-4 py-8 gap-8">
+                <div class="card">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>tell as your idea</h2>
+                        <p>Lorem ipsum dolor sit amet. Lorem ipsum .</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3>we will do all the work</h3>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum </p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>your product is worldwide</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing </p>
+                </div>
+            </div>
+            <div class="services">
+                <div class="py-24" id="service">
+                    <h1 class="main-title">services</h1>
+                    <p class="main-paragraph">don 't be busy , be productive</p>
+                    <div
+                        class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 items-center place-items-center">
+                        <div class="col">
+                            <div class="skill">
+                                <i class="fa-solid fa-palette"></i>
+                                <div>
+                                    <h3>graphic design</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eaque!</p>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-brands fa-sketch"></i>
+                                <div>
+                                    <h3>web design</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eaque!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="skill">
+                                <i class="fa-solid fa-vector-square"></i>
+                                <div>
+                                    <h3>UI / UX</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eaque!</p>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                                <div>
+                                    <h3>web development</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eaque!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image hidden lg:block relative
+                        after:contents[''] after:bg-second-color after:absolute 
+                        after:h-[calc(100%+50px)] after:w-20 after:-top-[25px] after:-right-6 after:-z-10">
+                            <img src="imgs/mountains-5260303_1920.jpg" alt="mountains" class="w-72 h-80">
+                        </div>
+                    </div>
+                </div>
+                <div class="py-24 bg-third-color" id="portfolio">
+                    <h1 class="main-title">portfolio</h1>
+                    <p class="main-paragraph">if you do it right , it will be fast forever</p>
+                    <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8 items-center">
+                        <div class="portfolio-card">
+                            <img src="imgs/digital-marketing-1433427_640.jpg" alt="digital marketing">
+                            <div>
+                                <h3>project management</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, tempore.</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="imgs/digital-marketing-5816304_640.jpg" alt="digital marketing">
+                            <div>
+                                <h3>project management</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, tempore.</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="imgs/typing-849806_640.jpg" alt="digital marketing">
+                            <div>
+                                <h3>project management</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, tempore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-24" id="about">
+                    <h1 class="main-title">about</h1>
+                    <p class="main-paragraph">less is more work</p>
+                    <div class="about-content flex flex-wrap gap-12 justify-center lg:justify-between">
+                        <div class="image pl-[30px] relative 
+                    before:absolute before:contents-[''] before:h-[calc(100%+40px)] before:w-[80px]
+                    before:-top-[20px] before:left-0 before:bg-main-color before:-z-10">
+                            <img src="imgs/water-8100724_1920.jpg" alt="" class="h-[350px] w-[350px]">
+                        </div>
+                        <div class="text max-w-[400px]">
+                            <p class="font-medium leading-normal text-2xl mb-8">Lorem ipsum dolor sit nesciunt sed
+                                eligendi dicta ut illum laboriosam praesentium. Odit tenetur fugit aspernatur!
+                                Similique.</p>
+                            <p class="text-[18px] text-paragraph-color">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Dolor nobis distinctio impedit. Voluptates beatae, nisi cumque quia
+                                velit laudantium excepturi quaerat quis fugit error temporibus asperiores harum.
+                                Ratione, officiis eum?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-24 bg-third-color text-center" id="contanct">
+                    <h1 class="main-title">contact</h1>
+                    <p class="main-paragraph">we are born to creat</p>
+                    <div class="mail">
+                        <h2 class="text-second-color font-extrabold text-2xl md:text-6xl">feel free to drop us a line at
+                            :</h2>
+                        <a href="mailto:bouaabd10@gmail.com?subject=contact"
+                            class="text-main-color text-xl md:text-4xl font-bold my-8 block">bouaabd10@gmail.com</a>
+                    </div>
+                    <div class="flex items-center justify-center mt-4">
+                        <p class="text-xl md:text-2xl text-paragraph-color font-medium mr-8">find us on social network
+                        </p>
+                        <a href="#" class="text-[1rem] md:text-xl text-main-color font-bold mr-4"><i
+                                class="fa-brands fa-google"></i></a>
+                        <a href="#" class="text-[1rem] md:text-xl text-main-color font-bold mr-4"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="text-[1rem] md:text-xl text-main-color font-bold mr-4"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer text-center py-6 bg-second-color text-white text-xl font-medium">
+            &copy; 2024 <span class="text-main-color mx-2 font-bold">-Beloued-</span><span> All right reserved</span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
